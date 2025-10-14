@@ -14,10 +14,62 @@
     </div>
   </header>
   <main class="container mt-5">
+    <!-- Table des matières -->
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="card" style="border: 2px solid #ed9b37;">
+          <div class="card-body">
+            <h3 class="text-center mb-4" style="color: #1f3542;">📋 Table des Matières</h3>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <div class="d-flex align-items-center mb-2">
+                  <span style="font-size: 1.5rem; margin-right: 10px;">🚦</span>
+                  <a href="#securite-routiere" class="text-decoration-none" style="color: #4e84a6;">
+                    <strong>Projet Sécurité Routière et Cycliste</strong>
+                  </a>
+                </div>
+                <small class="text-muted ms-4">Analyse factorielle • Infrastructures • Géographie</small>
+              </div>
+              
+              <div class="col-md-6 mb-3">
+                <div class="d-flex align-items-center mb-2">
+                  <span style="font-size: 1.5rem; margin-right: 10px;">🚕</span>
+                  <a href="#compagnie-taxi" class="text-decoration-none" style="color: #4e84a6;">
+                    <strong>Application Web Compagnie de Taxi</strong>
+                  </a>
+                </div>
+                <small class="text-muted ms-4">Streamlit • Python • Analyse de trajets</small>
+              </div>
+              
+              <div class="col-md-6 mb-3">
+                <div class="d-flex align-items-center mb-2">
+                  <span style="font-size: 1.5rem; margin-right: 10px;">📊</span>
+                  <a href="#prediction-bonheur" class="text-decoration-none" style="color: #4e84a6;">
+                    <strong>Prédiction du Bonheur</strong>
+                  </a>
+                </div>
+                <small class="text-muted ms-4">Machine Learning • Random Forest • SVM</small>
+              </div>
+              
+              <div class="col-md-6 mb-3">
+                <div class="d-flex align-items-center mb-2">
+                  <span style="font-size: 1.5rem; margin-right: 10px;">💼</span>
+                  <a href="#stage-ecommerce" class="text-decoration-none" style="color: #4e84a6;">
+                    <strong>Stage Automatisation E-commerce</strong>
+                  </a>
+                </div>
+                <small class="text-muted ms-4">SUPERGROUP Paris • 4 mois • R • Python</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="row">
       <div class="col-12">
         <div class="list-group">
-          <div class="list-group-item border-0 mb-4 p-4 shadow-sm" style="border-left: 4px solid #ed9b37 !important;">
+          <div id="securite-routiere" class="list-group-item border-0 mb-4 p-4 shadow-sm" style="border-left: 4px solid #ed9b37 !important;">
             <div class="d-flex align-items-center mb-3">
               <div class="me-3" style="font-size: 2rem; color: #4e84a6;">
                 🚦
@@ -80,7 +132,7 @@
             </div>
           </div>
 
-          <div class="list-group-item border-0 mb-4 p-4 shadow-sm" style="border-left: 4px solid yellow !important;">
+          <div id="compagnie-taxi" class="list-group-item border-0 mb-4 p-4 shadow-sm" style="border-left: 4px solid yellow !important;">
             <div class="d-flex align-items-center mb-3">
               <div class="me-3" style="font-size: 2rem; color: #1f3542;">
                 🚕
@@ -125,7 +177,53 @@
             </div>
           </div>
 
-          <div class="list-group-item border-0 mb-4 p-4 shadow-sm" style="border-left: 4px solid #4e84a6 !important;">
+          <div id="prediction-bonheur" class="list-group-item border-0 mb-4 p-4 shadow-sm" style="border-left: 4px solid #1f3542 !important;">
+            <div class="d-flex align-items-center mb-3">
+              <div class="me-3" style="font-size: 2rem; color: #ed9b37;">
+                📊
+              </div>
+              <h5 class="mb-0">
+                <span class="text-decoration-none fw-bold" style="color: #1f3542;">
+                  Évaluation des Modèles de Prédiction du Bonheur
+                </span>
+              </h5>
+            </div>
+            
+            <div class="ms-5">
+              <h6 class="text-primary mb-3" style="color: #4e84a6 !important;">
+                Comparaison d'algorithmes de Machine Learning pour la prédiction du bien-être subjectif
+              </h6>
+              
+              <p class="text-muted mb-3 lh-lg">
+                Projet de data science appliquée comparant l'efficacité de plusieurs <strong>algorithmes de classification</strong> 
+                pour prédire le niveau de bonheur déclaré. Évaluation méthodologique des performances pour identifier 
+                les approches les plus aptes à discriminer les niveaux de bonheur et fournir des prédictions équilibrées.
+              </p>
+              
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <div class="bg-light p-3 rounded">
+                    <strong style="color: #1f3542;">Modèles comparés :</strong><br>
+                    <span class="text-muted">Random Forest • SVM • Arbre de décision • Autres classificateurs</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="bg-light p-3 rounded">
+                    <strong style="color: #1f3542;">Application :</strong><br>
+                    <span class="text-muted">Prédiction du bonheur • Bien-être subjectif • Classification</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="text-end">
+                <a href="Fichier/Dossier_final_happy.pdf" class="btn btn-outline-primary btn-sm">
+                  Consulter le dossier
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div id="stage-ecommerce" class="list-group-item border-0 mb-4 p-4 shadow-sm" style="border-left: 4px solid #4e84a6 !important;">
             <div class="d-flex align-items-center mb-3">
               <div class="me-3" style="font-size: 2rem; color: #ed9b37;">
                 💼
@@ -174,5 +272,55 @@
       </div>
     </div>
   </main>
+
+  <!-- JavaScript pour le défilement fluide -->
+  <script>
+    // Défilement fluide vers les ancres
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+    
+    // Ajout d'un petit effet hover sur les liens de la table des matières
+    document.querySelectorAll('#toc a').forEach(link => {
+      link.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateX(5px)';
+        this.style.transition = 'transform 0.2s ease';
+      });
+      
+      link.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateX(0)';
+      });
+    });
+  </script>
+
+  <style>
+    /* Ajustement du scroll pour compenser la hauteur du header */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    [id] {
+      scroll-margin-top: 20px;
+    }
+    
+    /* Effet hover sur les cartes de projets */
+    .list-group-item {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    .list-group-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+    }
+  </style>
 </body>
 </html>

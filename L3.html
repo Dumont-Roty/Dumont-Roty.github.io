@@ -14,10 +14,52 @@
     </div>
   </header>
   <main class="container mt-5">
+    <!-- Table des matières -->
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="card" style="border: 2px solid #ed9b37;">
+          <div class="card-body">
+            <h3 class="text-center mb-4" style="color: #1f3542;">📋 Table des Matières</h3>
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="d-flex align-items-center mb-2">
+                  <span style="font-size: 1.5rem; margin-right: 10px;">📊</span>
+                  <a href="#recherche-sciences-sociales" class="text-decoration-none" style="color: #4e84a6;">
+                    <strong>Recherche Sciences Sociales</strong>
+                  </a>
+                </div>
+                <small class="text-muted ms-4">Autonomisation politique • Femmes et santé</small>
+              </div>
+              
+              <div class="col-md-4 mb-3">
+                <div class="d-flex align-items-center mb-2">
+                  <span style="font-size: 1.5rem; margin-right: 10px;">📈</span>
+                  <a href="#analyse-donnees-enquete" class="text-decoration-none" style="color: #4e84a6;">
+                    <strong>Analyse de Données d'Enquête</strong>
+                  </a>
+                </div>
+                <small class="text-muted ms-4">208 étudiants • Tests Chi-2 • R</small>
+              </div>
+              
+              <div class="col-md-4 mb-3">
+                <div class="d-flex align-items-center mb-2">
+                  <span style="font-size: 1.5rem; margin-right: 10px;">👥</span>
+                  <a href="#projet-collaboratif" class="text-decoration-none" style="color: #4e84a6;">
+                    <strong>Projet Collaboratif Économétrique</strong>
+                  </a>
+                </div>
+                <small class="text-muted ms-4">Équipe de 3 • HTML/JS • Visualisations</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="row">
       <div class="col-12">
         <div class="list-group">
-          <div class="list-group-item border-0 mb-4 p-4 shadow-sm" style="border-left: 4px solid #ed9b37 !important;">
+          <div id="recherche-sciences-sociales" class="list-group-item border-0 mb-4 p-4 shadow-sm" style="border-left: 4px solid #ed9b37 !important;">
             <div class="d-flex align-items-center mb-3">
               <div class="me-3" style="font-size: 2rem; color: #4e84a6;">
                 📊
@@ -53,7 +95,7 @@
             </div>
           </div>
           
-          <div class="list-group-item border-0 mb-4 p-4 shadow-sm" style="border-left: 4px solid #4e84a6 !important;">
+          <div id="analyse-donnees-enquete" class="list-group-item border-0 mb-4 p-4 shadow-sm" style="border-left: 4px solid #4e84a6 !important;">
             <div class="d-flex align-items-center mb-3">
               <div class="me-3" style="font-size: 2rem; color: #ed9b37;">
                 📈
@@ -89,7 +131,7 @@
             </div>
           </div>
 
-          <div class="list-group-item border-0 mb-4 p-4 shadow-sm" style="border-left: 4px solid #1f3542 !important;">
+          <div id="projet-collaboratif" class="list-group-item border-0 mb-4 p-4 shadow-sm" style="border-left: 4px solid #1f3542 !important;">
             <div class="d-flex align-items-center mb-3">
               <div class="me-3" style="font-size: 2rem; color: #ed9b37;">
                 👥
@@ -127,5 +169,64 @@
       </div>
     </div>
   </main>
+
+  <!-- JavaScript pour le défilement fluide -->
+  <script>
+    // Défilement fluide vers les ancres
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+    
+    // Ajout d'un petit effet hover sur les liens de la table des matières
+    document.querySelectorAll('.card a').forEach(link => {
+      link.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateX(5px)';
+        this.style.transition = 'transform 0.2s ease';
+      });
+      
+      link.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateX(0)';
+      });
+    });
+  </script>
+
+  <style>
+    /* Ajustement du scroll pour compenser la hauteur du header */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    [id] {
+      scroll-margin-top: 20px;
+    }
+    
+    /* Effet hover sur les cartes de projets */
+    .list-group-item {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    .list-group-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+    }
+    
+    /* Effet sur la table des matières */
+    .card {
+      transition: box-shadow 0.3s ease;
+    }
+    
+    .card:hover {
+      box-shadow: 0 6px 20px rgba(237, 155, 55, 0.2);
+    }
+  </style>
 </body>
 </html>
