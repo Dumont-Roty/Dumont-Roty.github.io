@@ -41,28 +41,24 @@
         <span>Portfolio • M2, M1 & L3</span>
       </div>
       <div class="filter-bar" aria-label="Filtrer les projets">
-        <button class="filter-button is-active" data-filter="all">Tous</button>
-        <button class="filter-button" data-filter="M2">M2</button>
-        <button class="filter-button" data-filter="M1">M1</button>
-        <button class="filter-button" data-filter="L3">L3</button>
+        <div class="filter-pill">
+          <button class="filter-button is-active" data-filter="all">Tous</button>
+        </div>
+        <div class="filter-pill">
+          <button class="filter-button" data-filter="M2">M2</button>
+          <a class="filter-link" href="#timeline">Parcours Master 2</a>
+        </div>
+        <div class="filter-pill">
+          <button class="filter-button" data-filter="M1">M1</button>
+          <a class="filter-link" href="M1.html">Projets Master 1</a>
+        </div>
+        <div class="filter-pill">
+          <button class="filter-button" data-filter="L3">L3</button>
+          <a class="filter-link" href="L3.html">Projets Licence 3</a>
+        </div>
       </div>
       <div class="project-grid">
-        <article class="project-card" data-level="M2">
-          <div class="project-thumb">
-            <div class="thumb-fallback">M2 • Projets</div>
-          </div>
-          <h3>Projets Master 2 (en cours)</h3>
-          <p>
-            Travaux de synthèse M2 : mémoire, outils data avancés et mises en production pour partenaires externes.
-          </p>
-          <a href="#timeline">
-            Voir l'état d'avancement
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M1 8h12M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
-            </svg>
-          </a>
-        </article>
-        <article class="project-card" data-level="M1">
+        <article class="project-card" data-filters="M1">
           <div class="project-thumb">
             <div class="thumb-logos">
               <img class="thumb-img" src="images/supergroup-photo.png" alt="Logo Supergroup" />
@@ -81,7 +77,7 @@
           </a>
         </article>
         
-        <article class="project-card" data-level="M1">
+        <article class="project-card" data-filters="M1">
           <div class="project-thumb">
             <div class="thumb-logos">
               <img class="thumb-img" src="images/streamlit.png" alt="Logo Streamlit" />
@@ -99,7 +95,7 @@
             </svg>
           </a>
         </article>
-        <article class="project-card" data-level="M1">
+        <article class="project-card" data-filters="M1">
           <div class="project-thumb">
             <div class="thumb-badges">
               <span class="logo-tag logo-rml">R</span>
@@ -117,22 +113,7 @@
             </svg>
           </a>
         </article>
-        <article class="project-card" data-level="M1">
-          <div class="project-thumb">
-            <div class="thumb-fallback">M1 • Projets</div>
-          </div>
-          <h3>Projets Master 1</h3>
-          <p>
-            Data apps, dashboards et modèles prédictifs conçus en M1 pour des cas d'usage réels et académiques.
-          </p>
-          <a href="M1.html">
-            Voir les projets M1
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M1 8h12M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
-            </svg>
-          </a>
-        </article>
-        <article class="project-card" data-level="M1">
+        <article class="project-card" data-filters="M1">
           <div class="project-thumb">
             <div class="thumb-logos">
               <img class="thumb-img" src="images/datagouv.png" alt="Logo data.gouv.fr" />
@@ -149,16 +130,46 @@
             </svg>
           </a>
         </article>
-        <article class="project-card" data-level="L3">
+        <article class="project-card" data-filters="L3">
           <div class="project-thumb">
-            <div class="thumb-fallback">L3 • Projets</div>
+            <div class="thumb-fallback">Recherche • Santé</div>
           </div>
-          <h3>Projets Licence 3</h3>
+          <h3>Autonomisation politique & santé</h3>
           <p>
-            Travaux en sciences sociales, analyses d'enquêtes et visualisations interactives réalisés durant la L3.
+            Étude des liens entre participation politique féminine et enjeux de santé publique, avec analyses comparatives.
           </p>
-          <a href="L3.html">
-            Voir les projets L3
+          <a href="Fichier/Autonomisation politique des femmes et santé - projet collectif L3.pdf" target="_blank">
+            Lire le rapport
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M1 8h12M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+            </svg>
+          </a>
+        </article>
+        <article class="project-card" data-filters="L3">
+          <div class="project-thumb">
+            <div class="thumb-fallback">Statistiques • R</div>
+          </div>
+          <h3>Analyse de données d'enquête</h3>
+          <p>
+            Traitement complet d’un sondage (Chi², corrélations, visualisations) auprès de 208 étudiants.
+          </p>
+          <a href="Fichier/Projet-R.html" target="_blank">
+            Consulter l'analyse
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M1 8h12M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+            </svg>
+          </a>
+        </article>
+        <article class="project-card" data-filters="L3">
+          <div class="project-thumb">
+            <div class="thumb-fallback">Collab • Éco</div>
+          </div>
+          <h3>Projet collaboratif économétrique</h3>
+          <p>
+            Travail en équipe sur méthodes économétriques et visualisations dynamiques pour une démarche collective.
+          </p>
+          <a href="Fichier/DumontRoty_Henri_Mynasian.html" target="_blank">
+            Voir le projet
             <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
               <path d="M1 8h12M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
             </svg>

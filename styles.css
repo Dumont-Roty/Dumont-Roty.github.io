@@ -406,6 +406,26 @@ section.visible {
   margin-bottom: 1rem;
 }
 
+.filter-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.filter-link {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.85);
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.filter-link:hover,
+.filter-link:focus {
+  opacity: 1;
+  color: var(--accent);
+}
+
 .filter-button {
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.04);

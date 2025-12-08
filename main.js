@@ -15,8 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const applyFilter = filter => {
     projectCards.forEach(card => {
-      const level = card.dataset.level;
-      const match = filter === 'all' || level === filter;
+      if (filter === 'all') {
+        card.classList.remove('is-hidden');
+        return;
+      }
+      const filters = (card.dataset.filters || '').split(' ').filter(Boolean);
+      const match = filters.includes(filter);
       card.classList.toggle('is-hidden', !match);
     });
   };
