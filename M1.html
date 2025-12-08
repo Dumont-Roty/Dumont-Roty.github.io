@@ -2,325 +2,106 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projets M1</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projets Master 1 — Pierre Dumont Roty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="custom-header py-4" style="background-color:#1f3542; color:#f2fcf8;">
-    <div class="container">
-      <h1>Projets Master 1</h1>
-      <a href="index.html" style="color:#ed9b37;">Retour à l'accueil</a>
+  <header class="page-hero">
+    <p class="badge-pill">Master 1 • Data & Analyse</p>
+    <h1>Projets Master 1</h1>
+    <p>Data apps, dashboards, modélisations et stage d'automatisation réalisés en première année de master.</p>
+    <div class="hero-cta">
+      <a class="btn-primary" href="index.html">Retour au portfolio</a>
+      <a class="btn-ghost" href="#projets">Voir les projets</a>
     </div>
   </header>
-  <main class="container mt-5">
-    <!-- Table des matières -->
-    <div class="row mb-5">
-      <div class="col-12">
-        <div class="card" style="border: 2px solid #ed9b37;">
-          <div class="card-body">
-            <h3 class="text-center mb-4" style="color: #1f3542;">📋 Table des Matières</h3>
-            <div class="row">
-              <div class="col-md-6 mb-3">
-                <div class="d-flex align-items-center mb-2">
-                  <span style="font-size: 1.5rem; margin-right: 10px;">🚦</span>
-                  <a href="#securite-routiere" class="text-decoration-none" style="color: #4e84a6;">
-                    <strong>Projet Sécurité Routière et Cycliste</strong>
-                  </a>
-                </div>
-                <small class="text-muted ms-4">Analyse factorielle • Infrastructures • Géographie</small>
-              </div>
-              
-              <div class="col-md-6 mb-3">
-                <div class="d-flex align-items-center mb-2">
-                  <span style="font-size: 1.5rem; margin-right: 10px;">🚕</span>
-                  <a href="#compagnie-taxi" class="text-decoration-none" style="color: #4e84a6;">
-                    <strong>Application Web Compagnie de Taxi</strong>
-                  </a>
-                </div>
-                <small class="text-muted ms-4">Streamlit • Python • Analyse de trajets</small>
-              </div>
-              
-              <div class="col-md-6 mb-3">
-                <div class="d-flex align-items-center mb-2">
-                  <span style="font-size: 1.5rem; margin-right: 10px;">📊</span>
-                  <a href="#prediction-bonheur" class="text-decoration-none" style="color: #4e84a6;">
-                    <strong>Prédiction du Bonheur</strong>
-                  </a>
-                </div>
-                <small class="text-muted ms-4">Machine Learning • Random Forest • SVM</small>
-              </div>
-              
-              <div class="col-md-6 mb-3">
-                <div class="d-flex align-items-center mb-2">
-                  <span style="font-size: 1.5rem; margin-right: 10px;">💼</span>
-                  <a href="#stage-ecommerce" class="text-decoration-none" style="color: #4e84a6;">
-                    <strong>Stage Automatisation E-commerce</strong>
-                  </a>
-                </div>
-                <small class="text-muted ms-4">SUPERGROUP Paris • 4 mois • R • Python</small>
-              </div>
-            </div>
-          </div>
-        </div>
+
+  <main class="page-wrapper">
+    <section id="projets">
+      <div class="section-heading">
+        <h2>Projets</h2>
+        <span>Apps • Modèles • Stage</span>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-12">
-        <div class="list-group">
-          <div id="securite-routiere" class="list-group-item border-0 mb-4 p-4 shadow-sm" style="border-left: 4px solid #ed9b37 !important;">
-            <div class="d-flex align-items-center mb-3">
-              <div class="me-3" style="font-size: 2rem; color: #4e84a6;">
-                🚦
-              </div>
-              <h5 class="mb-0">
-                <span class="text-decoration-none fw-bold" style="color: #1f3542;">
-                  Projet d'Analyse de la Sécurité Routière et Cycliste
-                </span>
-              </h5>
-            </div>
-            
-            <div class="ms-5">
-              <h6 class="text-primary mb-3" style="color: #4e84a6 !important;">
-                Étude complète et multidimensionnelle des accidents de la circulation en France
-              </h6>
-              
-              <div class="row">
-                <div class="col-md-4 mb-3">
-                  <div class="card h-100" style="border-left: 3px solid #4e84a6;">
-                    <div class="card-body p-3">
-                      <h6 class="card-title" style="color: #1f3542;">Analyse factorielle</h6>
-                      <p class="card-text small text-muted mb-2">
-                        Identification des facteurs explicatifs des accidents dans le département 37.
-                      </p>
-                      <a href="Fichier/Etude accidents INDRE ET LOIRE.pdf" class="btn btn-outline-secondary btn-sm">
-                        Voir l'étude
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="col-md-4 mb-3">
-                  <div class="card h-100" style="border-left: 3px solid #ed9b37;">
-                    <div class="card-body p-3">
-                      <h6 class="card-title" style="color: #1f3542;">Infrastructures cyclables</h6>
-                      <p class="card-text small text-muted mb-2">
-                        Tableau de bord interactif et cartographie des données cyclables issues de la base nationale.
-                      </p>
-                      <a href="https://www.data.gouv.fr/fr/reuses/analyse-des-infrastructures-cyclables-et-securite-des-cyclistes-en-france/" class="btn btn-outline-secondary btn-sm">
-                        Voir sur data.gouv.fr
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="col-md-4 mb-3">
-                  <div class="card h-100" style="border-left: 3px solid #1f3542;">
-                    <div class="card-body p-3">
-                      <h6 class="card-title" style="color: #1f3542;">Analyse géographique</h6>
-                      <p class="card-text small text-muted mb-2">
-                        Rapport final sur l'analyse factorielle des accidents.
-                      </p>
-                      <a href="Fichier/Dossier_final.pdf" class="btn btn-outline-secondary btn-sm">
-                        Voir le dossier
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-thumb">
+            <div class="thumb-logos">
+              <img class="thumb-img" src="images/datagouv.png" alt="Logo data.gouv.fr" />
             </div>
           </div>
+          <h3>Analyse sécurité routière</h3>
+          <p>Étude factorielle des accidents et dashboards pour sécuriser les infrastructures cyclables.</p>
+          <div class="project-meta">
+            <span class="pill">ACP</span>
+            <span class="pill">DataViz</span>
+            <span class="pill">Cartographie</span>
+          </div>
+          <a href="Fichier/Dossier_final.pdf" target="_blank">Voir le dossier</a>
+          <br />
+          <a href="Fichier/Etude accidents INDRE ET LOIRE.pdf" target="_blank">Voir l'étude Indre-et-Loire</a>
+        </article>
 
-          <div id="compagnie-taxi" class="list-group-item border-0 mb-4 p-4 shadow-sm" style="border-left: 4px solid yellow !important;">
-            <div class="d-flex align-items-center mb-3">
-              <div class="me-3" style="font-size: 2rem; color: #1f3542;">
-                🚕
-              </div>
-              <h5 class="mb-0">
-                <span class="text-decoration-none fw-bold" style="color: #1f3542;">
-                  Application Web - Compagnie de Taxi
-                </span>
-              </h5>
-            </div>
-            
-            <div class="ms-5">
-              <h6 class="text-primary mb-3" style="color: #4e84a6 !important;">
-                Développement d'une application interactive de gestion et analyse de données de taxi
-              </h6>
-              
-              <p class="text-muted mb-3 lh-lg">
-                Application web développée avec <strong>Streamlit</strong> pour l'analyse et la visualisation des données d'une compagnie de taxi. 
-                Interface interactive permettant l'exploration des trajets, l'analyse des performances et la gestion des modifications d'itinéraires.
-              </p>
-              
-              <div class="row mb-3">
-                <div class="col-md-6">
-                  <div class="bg-light p-3 rounded">
-                    <strong style="color: #1f3542;">Technologies utilisées :</strong><br>
-                    <span class="text-muted">Python • Streamlit • Pandas • Plotly</span>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="bg-light p-3 rounded">
-                    <strong style="color: #1f3542;">Fonctionnalités :</strong><br>
-                    <span class="text-muted">Analyse de trajets • Tableaux de bord • Visualisations</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="text-end">
-                <a href="https://compagnie-taxi-m1mecen.streamlit.app/" class="btn btn-outline-primary btn-sm" target="_blank">
-                  Voir l'application
-                </a>
-              </div>
+        <article class="project-card">
+          <div class="project-thumb">
+            <div class="thumb-logos">
+              <img class="thumb-img" src="images/streamlit.png" alt="Logo Streamlit" />
+              <img class="thumb-img" src="images/taxi.jpg" alt="Taxi" />
             </div>
           </div>
+          <h3>Application web taxi</h3>
+          <p>App Streamlit pour analyser les trajets, scénarios de placement et KPI d'une flotte de taxis.</p>
+          <div class="project-meta">
+            <span class="pill">Python</span>
+            <span class="pill">Streamlit</span>
+            <span class="pill">Plotly</span>
+          </div>
+          <a href="https://compagnie-taxi-m1mecen.streamlit.app/" target="_blank">Voir l'application</a>
+        </article>
 
-          <div id="prediction-bonheur" class="list-group-item border-0 mb-4 p-4 shadow-sm" style="border-left: 4px solid #1f3542 !important;">
-            <div class="d-flex align-items-center mb-3">
-              <div class="me-3" style="font-size: 2rem; color: #ed9b37;">
-                📊
-              </div>
-              <h5 class="mb-0">
-                <span class="text-decoration-none fw-bold" style="color: #1f3542;">
-                  Évaluation des Modèles de Prédiction du Bonheur
-                </span>
-              </h5>
-            </div>
-            
-            <div class="ms-5">
-              <h6 class="text-primary mb-3" style="color: #4e84a6 !important;">
-                Comparaison d'algorithmes de Machine Learning pour la prédiction du bien-être subjectif
-              </h6>
-              
-              <p class="text-muted mb-3 lh-lg">
-                Projet de data science appliquée comparant l'efficacité de plusieurs <strong>algorithmes de classification</strong> 
-                pour prédire le niveau de bonheur déclaré. Évaluation méthodologique des performances pour identifier 
-                les approches les plus aptes à discriminer les niveaux de bonheur et fournir des prédictions équilibrées.
-              </p>
-              
-              <div class="row mb-3">
-                <div class="col-md-6">
-                  <div class="bg-light p-3 rounded">
-                    <strong style="color: #1f3542;">Modèles comparés :</strong><br>
-                    <span class="text-muted">Random Forest • SVM • Arbre de décision • Autres classificateurs</span>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="bg-light p-3 rounded">
-                    <strong style="color: #1f3542;">Application :</strong><br>
-                    <span class="text-muted">Prédiction du bonheur • Bien-être subjectif • Classification</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="text-end">
-                <a href="Fichier/Dossier_final_happy.pdf" class="btn btn-outline-primary btn-sm">
-                  Consulter le dossier
-                </a>
-              </div>
+        <article class="project-card">
+          <div class="project-thumb">
+            <div class="thumb-badges">
+              <span class="logo-tag logo-rml">R</span>
+              <span class="logo-tag logo-rml">ML</span>
             </div>
           </div>
+          <h3>Prédiction du bonheur</h3>
+          <p>Comparaison Random Forest, SVM et autres classificateurs pour prédire le bien-être subjectif.</p>
+          <div class="project-meta">
+            <span class="pill">Classification</span>
+            <span class="pill">SVM</span>
+            <span class="pill">Random Forest</span>
+          </div>
+          <a href="Fichier/Dossier_final_happy.pdf" target="_blank">Consulter le dossier</a>
+        </article>
 
-          <div id="stage-ecommerce" class="list-group-item border-0 mb-4 p-4 shadow-sm" style="border-left: 4px solid #4e84a6 !important;">
-            <div class="d-flex align-items-center mb-3">
-              <div class="me-3" style="font-size: 2rem; color: #ed9b37;">
-                💼
-              </div>
-              <h5 class="mb-0">
-                <span class="text-decoration-none fw-bold" style="color: #1f3542;">
-                  Rapport de Stage M1 - Automatisation E-commerce
-                </span>
-              </h5>
-            </div>
-            
-            <div class="ms-5">
-              <h6 class="text-primary mb-3" style="color: #4e84a6 !important;">
-                Stage chez SUPERGROUP Paris (Avril - Août 2025)
-              </h6>
-              
-              <p class="text-muted mb-3 lh-lg">
-                Stage de <strong>4 mois</strong> axé sur le développement d'outils d'automatisation pour la gestion des données e-commerce. 
-                Conception et implémentation de solutions techniques pour optimiser les processus de traitement des données 
-                internes des clients et produits.
-              </p>
-              
-              <div class="row mb-3">
-                <div class="col-md-6">
-                  <div class="bg-light p-3 rounded">
-                    <strong style="color: #1f3542;">Compétences techniques :</strong><br>
-                    <span class="text-muted">R • Python • SQL • Analyse de données</span>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="bg-light p-3 rounded">
-                    <strong style="color: #1f3542;">Secteur d'activité :</strong><br>
-                    <span class="text-muted">E-commerce • Produits d'impulsion</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="text-end">
-                <a href="Fichier/STAGE_MECEN_2024_2025_DUMONTROTY_Pierre.pdf" class="btn btn-outline-primary btn-sm">
-                  Consulter le rapport
-                </a>
-              </div>
+        <article class="project-card">
+          <div class="project-thumb">
+            <div class="thumb-logos">
+              <img class="thumb-img" src="images/supergroup-photo.png" alt="Logo Supergroup" />
+              <img class="thumb-img" src="images/mecen.png" alt="Logo MECEN" />
             </div>
           </div>
-        </div>
+          <h3>Stage automatisation e-commerce</h3>
+          <p>Refonte des pipelines et automatisation des rapports commerciaux chez SUPERGROUP Paris.</p>
+          <div class="project-meta">
+            <span class="pill">R</span>
+            <span class="pill">Python</span>
+            <span class="pill">SQL</span>
+          </div>
+          <a href="Fichier/STAGE_MECEN_2024_2025_DUMONTROTY_Pierre.pdf" target="_blank">Consulter le rapport</a>
+        </article>
       </div>
-    </div>
+    </section>
   </main>
-
-  <!-- JavaScript pour le défilement fluide -->
-  <script>
-    // Défilement fluide vers les ancres
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      });
-    });
-    
-    // Ajout d'un petit effet hover sur les liens de la table des matières
-    document.querySelectorAll('#toc a').forEach(link => {
-      link.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateX(5px)';
-        this.style.transition = 'transform 0.2s ease';
-      });
-      
-      link.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateX(0)';
-      });
-    });
-  </script>
-
-  <style>
-    /* Ajustement du scroll pour compenser la hauteur du header */
-    html {
-      scroll-behavior: smooth;
-    }
-    
-    [id] {
-      scroll-margin-top: 20px;
-    }
-    
-    /* Effet hover sur les cartes de projets */
-    .list-group-item {
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    
-    .list-group-item:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
-    }
-  </style>
+  <script src="main.js"></script>
 </body>
 </html>
